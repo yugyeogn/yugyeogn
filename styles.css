@@ -16,7 +16,7 @@
       margin: 0;
       color: #ffffff;
       background-color: #0f0f0f;
-      font-family: 'Hi Melody', cursive;
+      
   }
   
   .container-box {
@@ -58,14 +58,14 @@
   }
   input {
       text-align: center;
-      font-family: 'Hi Melody', cursive;
+  
       font-weight: bold;
       font-size: 18px;
       width: 500px;
       height: 30px;
   }
   button {
-      font-family: 'Hi Melody', cursive;
+ 
       font-weight: bold;
       position: absolute;
       right: 50px;
