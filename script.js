@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const textElement = document.getElementById("typing-text");
   
-  const textToType = " 유경 \n홈페이지  ";
+  const textToType = " 스케줄 관리\n 홈페이지 ";
   const typingSpeed = 400; // 글자당 밀리초
 
   function typeText(text, index) {
