@@ -65,8 +65,9 @@
         eventRemove: function(obj){ // 이벤트가 삭제되면 발생하는 이벤트
           console.log(obj);
         },
+        
         select: function(arg) { // 캘린더에서 드래그로 이벤트를 생성할 수 있다.
-          var title = prompt('Event Title:');
+          var title = prompt('일정을 입력해주세요');
           if (title) {
             calendar.addEvent({
               title: title,
@@ -77,6 +78,14 @@
           }
           calendar.unselect()
         }
+        ,
+        eventClick: function (arg) {
+          var title = confirm('이벤트를 삭제 하시겠습니까?');    
+              if (title) {
+                  arg.event.remove()
+              } 
+        },
+      dayMaxEvents: true, // allow "more" link when too many events
         // 이벤트 
         
       });
