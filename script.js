@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const textElement = document.getElementById("typing-text");
   const textToType = " Schedule \n Management   ";
  
-  const typingSpeed = 400; // 글자당 밀리초
+  const typingSpeed = 300; // 글자당 밀리초
 
   function typeText(text, index) {
       if (index < text.length) {
