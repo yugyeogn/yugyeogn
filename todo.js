@@ -28,7 +28,7 @@ function showingList(text){
     const delbtn = document.createElement("button");
     const span = document.createElement("span");
     const listNum = toDos.length+1;
-    delbtn.innerText = "(지우기)";
+    delbtn.innerText = "지우기";
     delbtn.addEventListener("click", deleteList);
     span.innerText = text;
     list.appendChild(li);
