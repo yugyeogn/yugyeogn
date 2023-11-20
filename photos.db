@@ -1,5 +1,0 @@
- -- photos.db
-CREATE TABLE photos (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    filename TEXT
-); 
