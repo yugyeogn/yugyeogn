@@ -11,10 +11,7 @@
   * {
     font-family: "GmarketMedium";
   }
-  body {
-    padding-top: 150px;
-    background-color: #eff2f8;
-  }
+
   body::-webkit-scrollbar {
     display: none;
   }
@@ -27,14 +24,17 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("");
+    background-image: url(' ');
+    background-size: cover; /* 화면에 꽉 차도록 배경 이미지 크기 조절 */
+    background-position: center; /* 배경 이미지를 가운데 정렬 */
+    background-repeat: no-repeat;
    
 }
 
 .typing-effect-container {
     text-align: center;
-}
-
+  }
+  
 .typing-effect {
     font-size: 36px; /* 원하는 폰트 크기 사용 */
     color: #000000;
@@ -64,6 +64,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
+    font-size: 20px; /* 메인 글자크기 */
     background-color: #ffffff;
     padding: 10px;
 }
@@ -84,20 +85,12 @@ a {
     color: #000;
     font-weight: bold;
 }
-
-#home, #courses, #photo {
-    display: none;
+.foot {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
 }
 
-.text-rainbow {
-    background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple);
-    -webkit-background-clip: text;
-    color: transparent;
-    transform: perspective(400px) rotateX(45deg);
-  
-    font-weight: bold;
-    font-size: 70px;
-  }
 
 
   body {
@@ -131,31 +124,13 @@ a {
     margin-left: 50px;
     border-bottom: solid 1px #000000;
 }
-.inputlist {
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000; /* Adjust the background color as needed */
+    color: white; /* Adjust the text color as needed */
     text-align: center;
-    margin-top: 50px;
-}
-.inputlist h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-input {
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    width: 500px;
-    height: 30px;
-}
-button {
-  
-    font-weight: bold;
-    position: absolute;
-    right: 50px;
-    text-align: center;
-    background-color: #efd1d1;
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-    border-radius: 5px;
-}
-
- 
+    padding: 10px;
+    transition: transform 0.3s ease-in-out; /* Add smooth transition effect */
+} 
